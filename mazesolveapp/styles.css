@@ -1,0 +1,20 @@
+canvas {
+    display: block;
+    margin: 20px auto;
+    background: #eee;
+    border: 2px solid #000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 18px;
+    margin-top: 10px;
+}

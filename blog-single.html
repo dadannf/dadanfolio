@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>DevFolio Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: DevFolio
+    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">DNF</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#course">Courses & Certificate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div class="intro intro-single route bg-image" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h3 class="intro-title mb-4">Software Asterix</h3>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Library</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-thumb">
+              <img src="img/asterisk.png" class="img-fluid" alt="">
+            </div>
+            <div class="post-meta">
+              <h1 class="article-title">Install Software Asterisk dan Tanam Extention Asterisk Di Zoiper
+              </h1>
+              <ul>
+                <li>
+                  <span class="ion-ios-person"></span>
+                  <a href="#">Dadan Nuh Faturahman</a>
+                </li>
+                <li>
+                  <span class="ion-pricetag"></span>
+                  <a href="#">Web Design</a>
+                </li>
+              </ul>
+            </div>
+            <div class="article-content">
+              <p>Asterisk adalah perangkat lunak gratis dan sumber terbuka yang dirancang untuk membuat aplikasi
+                komunikasi, seperti sistem telepon IP, Gateway VoIP, server konferensi, dan solusi khusus lainnya untuk
+                perusahaan atau organisasi Anda. Itulah mengapa ini sangat digunakan oleh banyak instansi, pemerintah,
+                dan perusahaan.
+
+                ZoiPer adalah perangkat lunak telepon (softphone), yang memungkinkan Anda melakukan obrolan, suara,
+                panggilan video, dll.</p>
+              <h3>Konfigurasi Software Asterisk di VM Debian 11</h3>
+              <ol>
+                <li>Buka VirtualBox dan ubah pengaturan jaringan menjadi Bridged Adapter dengan interface WLAN (Wi-Fi)
+                  sebagai bridge.</li>
+                <li>Buka Debian dan buka konfigurasi menggunakan perintah:
+                  <code>#nano /etc/network/interfaces</code>. Kemudian ubah <code>eth0</code> menjadi <code>DHCP</code>.
+                </li>
+                <li>Cek IP Address dengan perintah:
+                  <code>#ifconfig eth0</code>.
+                  <br>
+                  <img src="img/ast3.png" alt="Cek IP Address" style="max-width:100%; height:auto;">
+                </li>
+                <li>Cek koneksi internet dengan perintah:
+                  <code>ping google.com</code>.
+                  <br>
+                  <img src="img/ast4.png" alt="Ping Google" style="max-width:100%; height:auto;">
+                </li>
+                <li>Masuk ke konfigurasi repository dengan perintah:
+                  <code>#nano /etc/apt/source.list</code>, lalu tambahkan repository internet dari Debian 8 yang sesuai
+                  dengan jenis Linux dan versinya.
+                </li>
+                <li>Update repository dengan perintah:
+                  <code>#apt-get update</code>.
+                </li>
+                <li>Install Asterisk menggunakan perintah:
+                  <code>#apt-get install asterisk</code>.
+                </li>
+                <li>Buka konfigurasi <code>sip.conf</code> menggunakan perintah:
+                  <code>#nano /etc/asterisk/sip.conf</code>, lalu tambahkan script seperti berikut:
+                  <pre>
+[111] ; Nomor telepon
+context = nama_konfigurasi
+type = nama_grup
+username = nama_kontak
+secret = password_nomer_telepon
+host = dynamic ; Gunakan dynamic agar lebih fleksibel
+      </pre>
+                </li>
+                <li>Buka konfigurasi <code>extensions.conf</code> dengan perintah:
+                  <code>#nano /etc/asterisk/extensions.conf</code>, lalu tambahkan script konfigurasi sesuai kebutuhan.
+                </li>
+                <li>Restart Asterisk dengan perintah:
+                  <code>#/etc/init.d/asterisk restart</code>.
+                  <br>
+                  <img src="img/ast10.png" alt="Restart Asterisk" style="max-width:100%; height:auto;">
+                </li>
+              </ol>
+
+              <h3>Tanam Extention Asterisk pada Zoiper</h3>
+              <ol>
+                <li>Install aplikasi Zoiper di smartphone 1.</li>
+                <li>Buka aplikasi dan login menggunakan akun yang telah dibuat di VOIP Server:
+                  <ul>
+                    <li>Username: <code>nomor_telepon@IP_Address</code></li>
+                    <li>Password: <code>secret</code> dari konfigurasi VOIP Server</li>
+                  </ul>
+                </li>
+                <li>Masukkan IP Address dari VOIP Server, lalu klik <em>Next</em>.
+                  <br>
+                  <img src="img/ast12.png" alt="Masukkan IP Address di Zoiper" style="max-width:100%; height:auto;">
+                </li>
+                <li>Langsung <em>skip</em> saja langkah selanjutnya.</li>
+                <li>Pilih protokol SIP, kemudian klik <em>Finish</em>.
+                  <br>
+                  <img src="img/ast14.png" alt="Protokol SIP di Zoiper" style="max-width:100%; height:auto;">
+                </li>
+                <li>Ulangi langkah yang sama di smartphone 2.</li>
+              </ol>
+
+              <p>Proses instalasi dan konfigurasi selesai.</p>
+            </div>
+          </div>
+
+          <div class="form-comments">
+            <div class="title-box-2">
+              <h3 class="title-left">
+                Leave a Reply
+              </h3>
+            </div>
+            <form class="form-mf">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <input type="text" class="form-control input-mf" id="inputName" placeholder="Name *" required>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <input type="email" class="form-control input-mf" id="inputEmail1" placeholder="Email *" required>
+                  </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="url" class="form-control input-mf" id="inputUrl" placeholder="Website">
+                  </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <textarea id="textMessage" class="form-control input-mf" placeholder="Comment *" name="message"
+                      cols="45" rows="8" required></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widget-sidebar sidebar-search">
+            <h5 class="sidebar-title">Search</h5>
+            <div class="sidebar-content">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary btn-search" type="button">
+                      <span class="ion-android-search"></span>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Recent Post</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#">Atque placeat maiores.</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+                </li>
+                <li>
+                  <a href="#">Nam quo autem exercitationem.</a>
+                </li>
+                <li>
+                  <a href="#">Atque placeat maiores nam quo autem</a>
+                </li>
+                <li>
+                  <a href="#">Nam quo autem exercitationem.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Archives</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#">September, 2017.</a>
+                </li>
+                <li>
+                  <a href="#">April, 2017.</a>
+                </li>
+                <li>
+                  <a href="#">Nam quo autem exercitationem.</a>
+                </li>
+                <li>
+                  <a href="#">Atque placeat maiores nam quo autem</a>
+                </li>
+                <li>
+                  <a href="#">Nam quo autem exercitationem.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="widget-sidebar widget-tags">
+            <h5 class="sidebar-title">Tags</h5>
+            <div class="sidebar-content">
+              <ul>
+                <li>
+                  <a href="#">Web.</a>
+                </li>
+                <li>
+                  <a href="#">Design.</a>
+                </li>
+                <li>
+                  <a href="#">Travel.</a>
+                </li>
+                <li>
+                  <a href="#">Photoshop</a>
+                </li>
+                <li>
+                  <a href="#">Corel Draw</a>
+                </li>
+                <li>
+                  <a href="#">JavaScript</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solver Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        canvas {
+            background: #eee;
+            border: 2px solid #000;
+            margin: 20px 0;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .info {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .controller {
+            display: grid;
+            grid-template-columns: 60px 60px 60px;
+            grid-template-rows: 60px 60px 60px;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            width: 60px;
+            height: 60px;
+            background: #ccc;
+            border: 2px solid #000;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .btn:active {
+            background: #aaa;
+        }
+
+        .empty {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Maze Solver Game</h1>
+    <p>Use arrow keys or touch controls to move the player to the green exit!</p>
+    <p class="info">Level: <span id="level">1</span> | Time Left: <span id="timer">30</span>s</p>
+
+    <!-- Kanvas permainan -->
+    <canvas id="mazeCanvas" width="400" height="400"></canvas>
+
+    <!-- Kontrol tombol -->
+    <div class="controller">
+        <div class="empty"></div>
+        <div class="btn" id="btnUp">↑</div>
+        <div class="empty"></div>
+        <div class="btn" id="btnLeft">←</div>
+        <div class="empty"></div>
+        <div class="btn" id="btnRight">→</div>
+        <div class="empty"></div>
+        <div class="btn" id="btnDown">↓</div>
+        <div class="empty"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
